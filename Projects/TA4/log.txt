@@ -1,0 +1,7 @@
+Fri, 20 Feb 2015 17:11:33 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA4\utils\db.php(12): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA4\utils\db.php(196): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA4\index.php(19): verifyLogin('admin@test.com', 'testpass1')
+#3 {main}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teaching Assistant Hub</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script src="js/app.js"></script>
+	<meta name="description" content="A Teaching Assistant resource for students and instructors">
+	<meta name="author" content="Ethan Hayes">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="University, Utah, TA, Teaching, Assistant, Application">
+</head>
+<body>
+	<?php include("navmenu.html");?>
+	<!--<nav class="fixed-nav-bar">
+		<div id="menu" class="menu">
+			<h2 class="sitename">TA Hub</h2>
+			<ul class="menu-items">
+				<li><a href="../../index.html">Home</a></li> |
+				<li><a href="form.html">Application Form</a></li> |
+				<li><a href="instructor.html">Instructor</a></li> |
+				<li><a href="administrator.html">Administration</a></li>
+			</ul>
+		</div>
+	</nav>-->
+
+	<section class="content">
+		<div class="description">
+			<h1>Teaching Assistant Hub</h1>
+			<p class="summary">
+				This website serves as a hub for students to apply to be Teaching Asisstants, and for instructors to select Teaching Assistants for their classes from the pool of applicants.
+			</p>
+		</div>
+	</section>
+</body>
+</html>

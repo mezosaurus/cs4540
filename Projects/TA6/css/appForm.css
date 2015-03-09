@@ -1,0 +1,120 @@
+/*
+* Author: Ethan Hayes
+* Date: 2015
+*/
+.application-form {
+	font-size: 0.8em;
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	right: 20%;
+}
+label {
+	float: left;
+	min-width: 300px;
+	font-weight: bold;
+	margin-right: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+br {
+	clear: left;
+}
+input, select {
+	width: 180px;
+}
+input, textarea, select {
+	margin-bottom: 10px;
+	padding: 5px;
+	vertical-align: bottom;
+}
+
+textarea {
+	width: 250px;
+	height: 150px;
+	resize: none;
+	margin-left: 10px;
+}
+.submit-button {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+}
+.submit-button {
+	width: 200px;
+	border: 2px solid #fff;
+	padding: 10px;
+	background-color: transparent;
+	margin-top: 50px;
+	color: #fff;
+	font-size: 1.0em;
+	font: inherit;
+}
+.submit-button:hover {
+	background-color: gray;
+	transition: all 0.3s ease;
+	outline: none;
+}
+
+.section-header {
+	padding-bottom: 10px;
+}
+.section-clickable:hover {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.section-clickable {
+	display: block;
+}
+.inner-section-header {
+	margin-left: 50px;
+}
+.inner-section-header > p {
+	text-size: 2px;
+}
+.form-section {
+		transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+
+.inner-form-section {
+	margin-left: 75px;
+	padding: 0;
+	margin-bottom: 5px;
+	transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+
+.form-list {
+	margin-left: 20px;
+}
+
+.no-indent {
+	margin-left: 0;
+}
+
+.checkbox-label {
+	display: table-cell;
+	min-width: 350px;
+	margin: 0;
+}
+.checkbox {
+	display: table-cell;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.additional-info-textarea {
+	width: 400px;
+	height: 200px;
+}

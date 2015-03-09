@@ -1,0 +1,21 @@
+Wed, 25 Feb 2015 01:38:09 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA5\utils\db.php(9): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA5\utils\db.php(220): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA5\index.php(24): verifyLogin('admin@test.com', 'testpass1')
+#3 {main}
+
+Wed, 25 Feb 2015 18:37:48 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\TA5\utils\db.php(9): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\TA5\utils\db.php(220): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\TA5\index.php(43): verifyLogin('test@test.com', 'test')
+#3 {main}
+
+Thu, 26 Feb 2015 16:22:57 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA5\utils\db.php(9): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA5\utils\db.php(103): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA5\registration.php(166): registerNewUser('test@test.com', 'Testpass1', 'ethan', 'hayes', 'test address', 'city', 'AL', '84123', '8017121399')
+#3 {main}
+

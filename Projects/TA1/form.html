@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Teaching Assistant Application</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/appForm.css">
+	<script src="js/app.js"></script>
+</head>
+<body onload="createFormElements();">
+	<nav class="fixed-nav-bar">
+		<div id="menu" class="menu">
+			<h2 class="sitename">Teaching Assistant Application</h2>
+			<ul class="menu-items">
+				<li><a href="hub.html">Hub</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="content">
+		<div class="description">
+			<h1>Teaching Assistant Requirements</h1>
+			<p class="summary">
+				<ol>
+					<li>
+							TAs are expected to spend 20 hours per week on TA duties. Students who are TAing should plan to take a lighter load than normal. This is especially true for students new to the University of Utah.
+						<br><br>
+							TAs must allocate enough time to properly prepare for office hours, including pre-reading and pre-doing the course assignments. When in charge of a discussion section, TAs will be expected to pre-prepare and practice their discussion.
+						<br><br>
+							TAs will be expected to finish assigned grading promptly and accurately within 7 days of the due date. Grading takes priority over other academic endeavors.
+					</li>
+					<br/>
+					<li>
+						TAs are expected to be in town the week before school starts.
+					</li>
+					<br/>
+					<li>
+						TA applicants should only choose classes for which they <b>can attend the class lectures and lab sections</b>.  You can find information about when and where classes meet on the CIS system.
+					</li>
+					<br/>
+					<li>
+						TAs are expected to be able to <b>effectively communicate</b> with the professor and students in the class. You will be expected to be fluent in the English language and comfortable speaking to individuals and groups.
+					</li>
+					<br/>
+					<li>
+						Excellent TAs will provide additional support to your faculty supervisor above and beyond normal duties, e.g., suggesting and/or creating new assignments, holding extra study sessions, stepping in to answer questions to students and solve issues, etc.
+					</li>
+				</ol>
+			</p>
+		</div>
+	</section>
+	<br/>
+	<h1 style="text-align: center">Teaching Assistant Application Form</h1>
+	<br/>
+	<form class="application-form" id="applicationForm" action="formSubmit.php" method="post">
+		<h2 class="section-header">Personal and Contact Information
+			<div id="sectionBtn1" style="display:inline-block"class="arrow-up" onClick="showSection(1)"></div>
+		</h2>
+		<div id="formSection1" class="form-section" style="display: none">
+			<p>
+	            <label>First Name:</label>
+	            <input type="text" name="firstname">
+	        </p>
+	        </p>
+	            <label>Last Name:</label>
+	            <input type="text" name="lastname">
+	        </p>
+	        <p>
+	            <label>For what semester/year do you wish to be considered for a TA position? </label>
+	            <br/>
+	            <select name="semester">
+	                <option value="Summer 2015">Summer 2015</option>
+	                <option value="Fall 2015">Fall 2015</option>
+	                <option value="Spring 2016">Spring 2016</option>
+	            </select>
+	        </p>
+	        <p>
+	            <label>UID (not starting with a U, e.g., 00121212):</label>
+	            <input type="number" name="uid">
+	        </p>
+	        <p>
+	            <label>Please provide us with the email address you check regularly:</label>
+	            <input type="email" name="email">
+	        </p>
+
+	        <p>
+	            <label>Daytime Phone:</label>
+	            <input type="tel" name="dayphone">
+	            <label>Evening Phone:</label>
+	            <input type="tel" name="eveningphone">
+	        </p>
+
+	        <p>
+	            <label>Street Address:</label>
+	            <input type="text" name="address">
+	            <label>City:</label>
+	            <input type="text" name="city">
+	        </p>
+
+	        <p>
+	            <label>State:</label>
+	            <input type="text" name="state">
+	            <label>Zip:</label>
+	            <input type="text" name="zip">
+	        </p>
+	        <p>
+	            <label>Are you pursuing a degree from the School of Computing (CS, Computing):</label>
+	        </p>
+	        <p>
+	            <input type="radio" name="cs_student" value="yes">Yes
+	            <br/>
+	            <input type="radio" name="cs_student" value="no">No
+	        </p>
+	        <p>
+	            <label>If you are a non-CS student, what is your academic program (e.g., Civil Engineering):</label>
+	            <input type = "text" name="othermajor">
+	        </p>
+	        <p>
+	            <label>What is your current GPA?</label>
+	            <input type = "text" name="gpa">
+	        </p>
+	        <p>
+	            <label>Will you be employed other than your TA position during the coming semester?</label>
+	            <br/>
+	            <input type="radio" name="otheremployment" value="yes">Yes
+	            <br/>
+	            <input type="radio" name="otheremployment" value="no">No
+	        </p>
+	        <p>
+	            <label>If you are planning to have a job along side the TA position, please describe the job (who you are working for, what you will be doing, how much time you will be working, etc.).</label>
+	        </p>
+	        <p>
+	            <textarea name="other_employment_info"></textarea>
+	        </p>
+	        <p>
+	            <label>Will you be available the week before school starts? (This means you will be in town and able to meet with your professor as necessary to prepare for your course.)</label>
+	            <input type="radio" name="priorweek" value="yes">Yes
+	            <br/>
+	            <input type="radio" name="priorweek" value="no">No
+	        </p>
+	        <p>
+	            <label>How many hours will you be available to work at your TA position? (Note: Graduate students are hired to work 20 hours a week. In general, undergraduate students are also expected to work 20 hours a week.)</label>
+	            <br/>
+	            <p>
+	            <select name="availability">
+	                <option value="<10"><10</option>
+	                <option value="10-15">10-15</option>
+	                <option value="15-20">15-20</option>
+	                <option value="20-30">20-30</option>
+	                <option value="30-40">30-40</option>
+	                <option value="40+">40+</option>
+	            </select>
+	            </p>
+	        </p>
+	        <p>
+	            <label>I grant the SoC the right to review my course grades and transcripts for the purpose of making hiring decisions:</label>
+	            <br/>
+	            <input type="radio" name="permission" value="yes" checked>Yes
+	            <br/>
+	            <input type="radio" name="permission" value="no">No
+	        </p>
+		</div>
+		<h2 class="section-header">Past TA Experience
+			<div id="sectionBtn2" style="display:inline-block" class="arrow-up" onClick="showSection(2)"></div>
+
+		</h2>
+		<div id="formSection2" class="form-section" style="display: none">
+			Please select all courses you have previously TA'd for:
+			<h3 class="inner-section-header">CS 1000 - 1999
+				<div id="sectionBtn1000" style="display:inline-block" class="arrow-up" onClick="showSection(1000)"></div>
+			</h3>
+			<div id="formSection1000" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 2000 - 2999
+				<div id="sectionBtn2000" style="display:inline-block" class="arrow-up" onClick="showSection(2000)"></div>
+			</h3>
+			<div id="formSection2000" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 3000 - 3999
+				<div id="sectionBtn3000" style="display:inline-block" class="arrow-up" onClick="showSection(3000)"></div>
+			</h3>
+			<div id="formSection3000" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 4000 - 4999
+				<div id="sectionBtn4000" style="display:inline-block" class="arrow-up" onClick="showSection(4000)"></div>
+			</h3>
+			<div id="formSection4000" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 5000 - 5999
+				<div id="sectionBtn5000" style="display:inline-block" class="arrow-up" onClick="showSection(5000)"></div>
+			</h3>
+			<div id="formSection5000" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 6000 - 6999
+				<div id="sectionBtn6000" style="display:inline-block" class="arrow-up" onClick="showSection(6000)"></div>
+			</h3>
+			<div id="formSection6000" class="inner-form-section" style="display: none"></div>
+		</div>
+		<h2 class="section-header">Course Selection
+			<div id="sectionBtn3" style="display:inline-block" class="arrow-up" onClick="showSection(3)"></div>
+
+		</h2>
+		<div id="formSection3" class="form-section" style="display: none">
+			Please select all courses you would like to TA for (must have taken the course before you can TA it):
+			<h3 class="inner-section-header">CS 1000 - 1999
+				<div id="sectionBtn1001" style="display:inline-block" class="arrow-up" onClick="showSection(1001)"></div>
+			</h3>
+			<div id="formSection1001" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 2000 - 2999
+				<div id="sectionBtn2001" style="display:inline-block" class="arrow-up" onClick="showSection(2001)"></div>
+			</h3>
+			<div id="formSection2001" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 3000 - 3999
+				<div id="sectionBtn3001" style="display:inline-block" class="arrow-up" onClick="showSection(3001)"></div>
+			</h3>
+			<div id="formSection3001" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 4000 - 4999
+				<div id="sectionBtn4001" style="display:inline-block" class="arrow-up" onClick="showSection(4001)"></div>
+			</h3>
+			<div id="formSection4001" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 5000 - 5999
+				<div id="sectionBtn5001" style="display:inline-block" class="arrow-up" onClick="showSection(5001)"></div>
+			</h3>
+			<div id="formSection5001" class="inner-form-section" style="display: none"></div>
+
+			<h3 class="inner-section-header">CS 6000 - 6999
+				<div id="sectionBtn6001" style="display:inline-block" class="arrow-up" onClick="showSection(6001)"></div>
+			</h3>
+			<div id="formSection6001" class="inner-form-section" style="display: none"></div>
+		</div>
+		<h2 class="section-header">Additional Information
+			<div id="sectionBtn4" style="display:inline-block" class="arrow-up" onClick="showSection(4)"></div>
+
+		</h2>
+		<div id="formSection4" class="form-section" style="display: none">
+			<p>
+	            <label>Final thoughts: The strengths and abilities you would bring to the job. What programming languages and tools you are familiar with. Any past experience not describe above. Any recommendations from faculty asking for you specifically as a TA. Any additional information you think would help us choose you as a TA.</label>
+	        </p>
+	        <p>
+	            <textarea name="strengths"></textarea>
+	        </p>
+	        <p>
+	            <label>Resume and/or letter of introduction.</label>
+	            <input type = "file" name="resume">
+	        </p>
+	        <p>
+	            <label>List any faculty who have agreed to give you a recommendation. (Note: you should only approach faculty for whom you have an establish relationship (e.g., having taken their course)).</label>
+	        </p>
+	        <p>
+	            <textarea name="faculty"></textarea>
+	        </p>
+
+	        <!-- Graduate Students section-->
+	        <p>
+	            <label>Were you Promised Aid by the School of Computing upon accepting your application? Were you promised financial aid for this coming semester as part of your acceptance package.</label>
+	            <input type="radio" name="financialaid" value="yes" checked>Yes
+	            <br/>
+	            <input type="radio" name="financialaid" value="no">No
+	        </p>
+	        <!-- INternational student section-->
+	        <p>
+	            <label>What is your country of origin? (Where your were born/raised.)</label>
+	            <input type = "text" name="country">
+	        </p>
+	        <p>
+	            <label>What is the name of your previous University?</label>
+	            <input type = "text" name="prevuniversity">
+	        </p>
+	        <p>
+	            <label>Please enter your total TOFL score:</label>
+	            <input type = "text" name="tofl">
+	        </p>
+	        <p>
+	            <label>Please enter your TOFL spoken communication score:</label>
+	            <input type = "text" name="toflscore">
+	        </p>
+	        <p>
+	            <label>If you have taken the IELTS, please enter your total score:</label>
+	            <input type = "text" name="ielts">
+	        </p>
+	        <p>
+	            <label>If you have taken the IELTS, please enter your spoken communication score:</label>
+	            <input type = "text" name="ieltsscore">
+	        </p>        <p>
+	            <label>ITA Status Please indicate your ITA status.</label>
+	            <input type = "text" name="itastatus">
+	        </p>
+		</div>
+		<input type="submit" name="submit" value="Submit" class="submit-button">
+	</form>
+</body>
+</html>

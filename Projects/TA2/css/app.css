@@ -1,0 +1,138 @@
+/*
+* Author: Ethan Hayes
+* Date: 2015
+*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	font: normal 18px/22px "Arial", sans-serif;
+	/*background=color: #e9ffff;*/
+	color:#fdfdfd;
+	background: url("../images/dark_bg.png");
+	background-size: 100% 100%;
+}
+h1, h2 {
+	font-weight: 600;
+}
+h1 {
+	font-size: 36px;
+	line-height: 46px;
+}
+h2 {
+	font-size: 24px;
+	line-height: 33px;
+}
+h2 {
+	color: #e0e0e0;
+}
+h3 {
+	font-size: 16px;
+	line-height: 20px;
+}
+p {
+	margin: 20px 0;
+}
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+.fixed-nav-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 50px;
+	background-color: rgb(204, 0, 0);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.content {
+	position: relative;
+}
+.description {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 75px;
+	min-height: 250px;
+	text-align: center;
+	
+}
+
+.fixed-nav-bar li, .fixed-nav-bar a {
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.listMenu {
+	position: absolute;
+	display: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid white;
+	background: #000;
+}
+nav ul li:hover ul {
+	display: block;
+}
+
+.menu {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.menu a, .menu a:visited {
+  color: #ffffff;
+}
+.menu a:hover, .menu a:target, .menu select:hover, .menu select:target {
+  color: #b0b0b0;
+  outline: none;
+}
+.menu-items {
+  display: inline-block;
+}
+.sitename {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+a.sitename, a:visited.sitename {
+  color: #e0e0e0;
+}
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.menu-items a, .menu-items select {
+  text-decoration: none;
+}
+.show, .hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #dde1e2;
+}
+
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid black;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid black;
+}

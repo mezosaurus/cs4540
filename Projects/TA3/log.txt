@@ -1,0 +1,49 @@
+Thu, 12 Feb 2015 05:55:18 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(8): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(17): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA3\registration.php(20): registerNewUser('ethanhayes72@gm...', 'testpass1', 'Ethan', 'Hayes', 'Test address', 'Taylorsville', 'Utah', '84123', '1234567890')
+#3 {main}
+
+Thu, 12 Feb 2015 05:56:23 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(8): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(17): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA3\registration.php(20): registerNewUser('ethanhayes72@gm...', 'testpass1', 'Ethan', 'Hayes', 'test address', 'Taylorsville', 'Utah', '84123', '1234567890')
+#3 {main}
+
+Thu, 12 Feb 2015 19:53:16 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(8): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(72): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA3\registration.php(30): getUserId('ethanhayes72@gm...')
+#3 {main}
+
+Thu, 12 Feb 2015 19:56:20 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(8): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(72): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA3\registration.php(30): getUserId('ethanhayes72@gm...')
+#3 {main}
+
+Thu, 12 Feb 2015 21:22:23 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(8): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(17): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA3\registration.php(36): registerNewUser('applicant@test....', 'testpass1', 'Ethan', 'Hayes', 'test address', 'Taylorsville', 'Utah', '84123', '1234567890')
+#3 {main}
+
+Fri, 13 Feb 2015 00:35:29 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(9): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(117): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA3\index.php(18): verifyLogin('dumb@dumb.com', 'test')
+#3 {main}
+
+Fri, 13 Feb 2015 04:59:10 +0100
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+#0 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(9): PDO->__construct('mysql:host=loca...', 'TA_Application', '465719065')
+#1 C:\xampp\htdocs\cs4540\Projects\TA3\utils\db.php(127): openDBConnection()
+#2 C:\xampp\htdocs\cs4540\Projects\TA3\index.php(18): verifyLogin('applicant@test....', 'testpass1')
+#3 {main}
+

@@ -1,0 +1,48 @@
+/*
+* Author: Ethan Hayes
+* Date: 2015
+*/
+.button, .button:visited{
+  display: inline-block;
+  width: 200px;
+  margin: 50px 10px 30px 10px;
+  padding: 10px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 0.1s ease;
+  font-size: 1.0em;
+  outline: none;
+}
+
+.button:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.course-list {
+  float:left;
+  margin-left: 100px;
+  display:block;
+}
+
+.course-list ul {
+  list-style: none;
+}
+.course-list ul > li {
+  margin-left: 20px;
+}
+
+.course {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.course:first-child{
+  border-top: 1px solid white;
+}

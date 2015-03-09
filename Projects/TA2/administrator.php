@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administrator Home</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/administrator.css">
+	<script src="js/app.js"></script>
+	<meta name="description" content="A Teaching Assistant resource for students and instructors">
+	<meta name="author" content="Ethan Hayes">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="University, Utah, TA, Teaching, Assistant, Application">
+</head>
+<body>
+	<?php include("navmenu.html");?>
+	<!--<nav class="fixed-nav-bar">
+		<div id="menu" class="menu">
+			<h2 class="sitename">Administrator Home</h2>
+			<ul class="menu-items">
+				<li><a href="hub.html">Hub</a></li>
+			</ul>
+		</div>
+	</nav>-->
+
+	<section class="content">
+		<div class="description">
+			<h1>Administrator Home</h1>
+			<p class="summary">
+				On this page an administrator can see a list of all the applicants as well as a list of all the available courses that need teaching assistants.
+			</p>
+			<button type="button" class="button" onClick="onCourseListBtnClick()">Course List</a>
+			<button type="button" class="button" onClick="onApplicantListBtnClick()">Applicant Pool</a>
+		</div>
+	</section>
+	<div id="courseList" class="course-list-hide" >
+		<ul>
+			<li>
+				<h3>CS 2100 - Discrete Structures</h3>
+				<ul>
+					<li>TAs required: 2</li>
+					<li>TAs found: 0</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
